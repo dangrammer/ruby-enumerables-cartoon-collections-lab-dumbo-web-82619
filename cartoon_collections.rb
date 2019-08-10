@@ -2,8 +2,10 @@ def roll_call_dwarves(array)
   list = array
   i = 0
   while i < array.length do
-  array.each_with_index do |item, index|
+    array.each_with_index do |item, index|
     array[item] = index
+    i += 1
+    end
   end
   puts list
 end
